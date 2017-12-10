@@ -7,11 +7,11 @@ using System.Text;
 
 namespace Revision
 {
-    public class User
+     class User
     {
         protected string nom;
         private string prenom;
-        int age;
+        private int age;
 
         public User(string nom,string prenom,int age)
         {

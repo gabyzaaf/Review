@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Revision
 {
-    class Gamer : User
+     class Gamer : User
     {
         private string favoriteGame;
 
@@ -27,16 +27,6 @@ namespace Revision
             return $"The role Played is {element}";
         }
 
-        public string Play(string element,string element2) {
-            return $"The element played is {element} - {element2}";
-        }
-
-        public int Play(string element,int v) {
-            return v;
-        }
-
-        public string Nom() {
-            return base.nom;
-        }
+        
     }
 }

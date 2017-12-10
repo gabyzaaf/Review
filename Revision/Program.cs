@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Revision;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Revision
+namespace Revision2
 {
     class Program
     {
@@ -15,7 +16,7 @@ namespace Revision
 
             var gamer = new Gamer("Cordona", "Jo", 23, "Mario");
             gamer.Display();
-            Console.WriteLine(gamer.Play("zaaaa", 23));
+            Console.WriteLine(gamer.Play("zaaaa"));
         }
     }
 }
