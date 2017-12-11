@@ -42,6 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Banc\CompteBancaire.cs" />
+    <Compile Include="Banc\CompteCourant.cs" />
+    <Compile Include="Banc\CompteEpargne.cs" />
+    <Compile Include="Cercle.cs" />
     <Compile Include="Gamer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
