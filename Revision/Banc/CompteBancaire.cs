@@ -20,7 +20,7 @@ namespace Revision.Banc
         }
 
         public void Crediter(double montant) {
-            this.Solde = this.Solde + montant;
+            this.Solde += montant;
         }
 
        

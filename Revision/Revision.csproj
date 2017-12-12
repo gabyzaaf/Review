@@ -45,14 +45,20 @@
     <Compile Include="Banc\CompteBancaire.cs" />
     <Compile Include="Banc\CompteCourant.cs" />
     <Compile Include="Banc\CompteEpargne.cs" />
-    <Compile Include="Cercle.cs" />
-    <Compile Include="Gamer.cs" />
+    <Compile Include="DesignPattern\Creator\Builder\Pratic\FluentBuilder.cs" />
+    <Compile Include="DesignPattern\Creator\Builder\Pratic\User.cs" />
+    <Compile Include="DesignPattern\Creator\Builder\Pratic\UserBuilder.cs" />
+    <Compile Include="DesignPattern\Creator\Builder\Theory\Builder.cs" />
+    <Compile Include="DesignPattern\Creator\Builder\Theory\ConcreteBuilder1.cs" />
+    <Compile Include="DesignPattern\Creator\Builder\Theory\ConcreteBuilder2.cs" />
+    <Compile Include="DesignPattern\Creator\Builder\Theory\Director.cs" />
+    <Compile Include="DesignPattern\Creator\Builder\Theory\Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
