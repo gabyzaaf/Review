@@ -45,7 +45,6 @@
     <Compile Include="Banc\CompteBancaire.cs" />
     <Compile Include="Banc\CompteCourant.cs" />
     <Compile Include="Banc\CompteEpargne.cs" />
-    <Compile Include="DesignPattern\Creator\Builder\Pratic\FluentBuilder.cs" />
     <Compile Include="DesignPattern\Creator\Builder\Pratic\User.cs" />
     <Compile Include="DesignPattern\Creator\Builder\Pratic\UserBuilder.cs" />
     <Compile Include="DesignPattern\Creator\Builder\Theory\Builder.cs" />
@@ -53,6 +52,19 @@
     <Compile Include="DesignPattern\Creator\Builder\Theory\ConcreteBuilder2.cs" />
     <Compile Include="DesignPattern\Creator\Builder\Theory\Director.cs" />
     <Compile Include="DesignPattern\Creator\Builder\Theory\Product.cs" />
+    <Compile Include="DesignPattern\Creator\Prototype\ConcretePrototype1.cs" />
+    <Compile Include="DesignPattern\Creator\Prototype\ConcretePrototype2.cs" />
+    <Compile Include="DesignPattern\Creator\Prototype\Prototype.cs" />
+    <Compile Include="DesignPattern\Structural\Bridge\Theory\Customer.cs" />
+    <Compile Include="DesignPattern\Structural\Bridge\Theory\CustomerBase.cs" />
+    <Compile Include="DesignPattern\Structural\Bridge\Theory\CustomerData.cs" />
+    <Compile Include="DesignPattern\Structural\Bridge\Theory\DataObject.cs" />
+    <Compile Include="DesignPattern\Structural\Composite\Pratic\Family.cs" />
+    <Compile Include="DesignPattern\Structural\Composite\Pratic\ParentsAbstracted.cs" />
+    <Compile Include="DesignPattern\Structural\Composite\Pratic\PrimitiveFamily.cs" />
+    <Compile Include="DesignPattern\Structural\Composite\Theory\CompositeElement.cs" />
+    <Compile Include="DesignPattern\Structural\Composite\Theory\DrawingElement.cs" />
+    <Compile Include="DesignPattern\Structural\Composite\Theory\PrimitiveElement.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
