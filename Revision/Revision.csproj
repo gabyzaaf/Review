@@ -45,6 +45,16 @@
     <Compile Include="Banc\CompteBancaire.cs" />
     <Compile Include="Banc\CompteCourant.cs" />
     <Compile Include="Banc\CompteEpargne.cs" />
+    <Compile Include="DesignPattern\Behaviour\ChaineOfResponsability\Practical\ApproverSalarie.cs" />
+    <Compile Include="DesignPattern\Behaviour\ChaineOfResponsability\Practical\Ceo.cs" />
+    <Compile Include="DesignPattern\Behaviour\ChaineOfResponsability\Practical\Engineer.cs" />
+    <Compile Include="DesignPattern\Behaviour\ChaineOfResponsability\Practical\Maintener.cs" />
+    <Compile Include="DesignPattern\Behaviour\ChaineOfResponsability\Practical\SalariePeople.cs" />
+    <Compile Include="DesignPattern\Behaviour\ChaineOfResponsability\Theory\Approuver.cs" />
+    <Compile Include="DesignPattern\Behaviour\ChaineOfResponsability\Theory\Director.cs" />
+    <Compile Include="DesignPattern\Behaviour\ChaineOfResponsability\Theory\President.cs" />
+    <Compile Include="DesignPattern\Behaviour\ChaineOfResponsability\Theory\Purchase.cs" />
+    <Compile Include="DesignPattern\Behaviour\ChaineOfResponsability\Theory\VicePresident.cs" />
     <Compile Include="DesignPattern\Creator\Builder\Pratic\User.cs" />
     <Compile Include="DesignPattern\Creator\Builder\Pratic\UserBuilder.cs" />
     <Compile Include="DesignPattern\Creator\Builder\Theory\Builder.cs" />

@@ -1,5 +1,7 @@
 ﻿using Revision;
 using Revision.Banc;
+using Revision.DesignPattern.Behaviour.ChaineOfResponsability;
+using Revision.DesignPattern.Behaviour.ChaineOfResponsability.Practical;
 using Revision.DesignPattern.Creator.Builder;
 using Revision.DesignPattern.Creator.Builder.Pratic;
 using Revision.DesignPattern.Creator.Prototype;
@@ -16,6 +18,8 @@ namespace Revision2
 {
     class Program
     {
+        public static object ApprouverSalarie { get; private set; }
+
         static void Main(string[] args)
         {
 
@@ -30,7 +34,7 @@ namespace Revision2
 
             // Pattern
 
-            Director director = new Director();
+            Revision.DesignPattern.Creator.Builder.Director director = new Revision.DesignPattern.Creator.Builder.Director();
 
             Builder b1 = new ConcreteBuilder1();
             Builder b2 = new ConcreteBuilder2();
@@ -101,8 +105,36 @@ namespace Revision2
             family.Add(familyH);
 
             family.Display(0);
-            
 
+            // Chaine of Responsability
+
+            Approuver lorry = new Revision.DesignPattern.Behaviour.ChaineOfResponsability.Director();
+            Approuver sam = new VicePresident();
+            Approuver tamy = new President();
+
+            lorry.Successor = sam;
+            sam.Successor = tamy;
+
+            var purcharse = new Purchase(2034, 350.00, "Assets");
+            lorry.ProcessRequest(purcharse);
+
+            purcharse = new Purchase(2035, 32590.10, "Projet X");
+            lorry.ProcessRequest(purcharse);
+
+            purcharse = new Purchase(2036, 122100.00, "Projet Y");
+            lorry.ProcessRequest(purcharse);
+
+            // Chain of responsability Practical
+
+            ApproverSalarie cami = new Ceo();
+            ApproverSalarie sami = new Engineer();
+            ApproverSalarie paul = new Maintener();
+
+            cami.Successor = sami;
+            sami.Successor = paul;
+
+            var people = new SalariePeople("Sana", "Paul", 5000);
+            cami.Process(people);
 
         }
     }
